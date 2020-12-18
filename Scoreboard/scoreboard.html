@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Farkle Scoreboard</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <h1>Farkle Scoreboard!</h1>
+        <img src="img/dice.png" height="150"/>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <button class="btn btn-primary"  onclick="showRules()">Show Rules</button>
+                    <img src="img/rules.jpg" alt="rules" id="rules"/>
+            </div>
+        </div>
+        <div class="row playerRow1">
+            <!-- Player 1 -->
+            <div class="col-sm p-3" id="p1Col">
+                <h4 contenteditable="true">Player 1</h4>
+                <h2 class="playerScore" id="p1Display">0</h2>
+                <label for="p1Score">Add Score Here</label><br>
+                <input type="number" id="p1Score" name="p1Score" step="50" ><br>
+                <input type="submit" onclick="addScore()" class="btn btn-primary mt-2">
+            </div>
+            <!-- Player 2 -->
+            <div class="col-sm p-3" id="p2Col">
+                <h4 contenteditable="true">Player 2</h4>
+                <h2 class="playerScore" id="p2Display">0</h2>
+                <label for="p2Score">Add Score Here</label><br>
+                <input type="number" id="p2Score" name="p2Score" step="50" ><br>
+                <input type="submit" onclick="addScore()" class="btn btn-warning mt-2">
+            </div>
+            <!-- Player 3 -->
+            <div class="col-sm p-3" id="p3Col">
+                <h4 contenteditable="true">Player 3</h4>
+                <h2 class="playerScore" id="p3Display">0</h2>
+                <label for="p3Score">Add Score Here</label><br>
+                <input type="number" id="p3Score" name="p3Score" step="50" ><br>
+                <input type="submit" onclick="addScore()" class="btn btn-danger mt-2">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/scoringLogic.js"></script>
+    </body>
+
+</html>

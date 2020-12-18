@@ -1,0 +1,19 @@
+#rules {
+    display: none;
+}
+
+.playerScore {
+    font-size: 5rem;
+}
+
+#p1Col , #p3Col{
+text-align: center;
+background-color: rgb(241, 109, 33);
+/* border-radius: 10px; */
+}
+
+#p2Col {
+text-align: center;
+background-color: rgb(33, 106, 241);
+/* border-radius: 10px; */
+}
